@@ -1,0 +1,79 @@
+.login {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  justify-content: center;
+  height: 100vh;
+  
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+}
+
+  .image {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    @media (max-width: 900px) {
+        display: none;
+    }
+  }
+
+  .container-form {
+    width: 80%;
+    padding: 2%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    padding: 1%;
+    width: 90%;
+
+  }
+
+    .container-form-items {
+      padding: 20px;
+      display: grid;
+      row-gap: 10px;
+    }
+    .main-text {
+      color: var(--main-fontColor);
+    }
+
+    .logo {
+      width: 15em;
+    }
+
+    .btn-prospera {
+      color: white;
+      font-weight: 600;
+      margin-top: 10px;
+      background: linear-gradient(90deg, #57ac8e 0%, #2c5781 100%);
+    }
+  }
+
+  .container-opciones {
+    .opciones {
+      display: flex;
+      justify-content: start;
+      column-gap: 20px;
+      flex-wrap: wrap;
+    }
+  }
+
+  
+}
+
+
+.form-check-input:checked {
+  background-color: #57ac8e;
+  border-color: #2c5781;
+}

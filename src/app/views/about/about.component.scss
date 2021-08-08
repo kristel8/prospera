@@ -1,0 +1,39 @@
+.container-detalle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    width: 80%;
+    margin-top: 5%;
+    row-gap: 20px;
+    @media screen {
+        
+    }
+}
+
+.container-message, .container-about {
+    width: 80%;
+    margin: auto;
+    font-weight: 600;
+    margin-top: 3%;
+
+    h4, h3 {
+    font-weight: 700;
+    }
+
+}
+.item {
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+    img {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+}
