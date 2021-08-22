@@ -11,6 +11,9 @@ import { InvestComponent } from './invest/invest.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { SimulationComponent } from './simulation/simulation.component';
 import { AboutComponent } from './about/about.component';
+import { RouterModule } from '@angular/router';
+import { DescriptionComponent } from './description/description.component';
+import { InvestpropertiesComponent } from './investproperties/investproperties.component';
 
 
 @NgModule({
@@ -21,12 +24,16 @@ import { AboutComponent } from './about/about.component';
     InvestComponent,
     QuestionsComponent,
     SimulationComponent,
-    AboutComponent
+    AboutComponent,
+    DescriptionComponent,
+    InvestpropertiesComponent
+    
   ],
   imports: [
     CommonModule,
     ViewRoutingModule,
-    ComponentModule
+    ComponentModule,
+    RouterModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

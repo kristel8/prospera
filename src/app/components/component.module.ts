@@ -4,6 +4,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { LoadingComponent } from './loading/loading.component';
 import { SimulationComponent } from '../views/simulation/simulation.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -12,9 +13,11 @@ import { SimulationComponent } from '../views/simulation/simulation.component';
     FooterComponent,
     HeaderComponent,
     LoadingComponent
+   
   ],
   imports: [
     CommonModule,
+    RouterModule
   ],
   exports: [
     FooterComponent,
