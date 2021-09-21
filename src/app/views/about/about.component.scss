@@ -1,39 +1,90 @@
 .container-detalle {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: auto;
-    width: 80%;
-    margin-top: 5%;
-    row-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 5%;
+  row-gap: 20px;
     @media screen {
-        
+
     }
 }
 
 .container-message, .container-about {
-    width: 80%;
-    margin: auto;
-    font-weight: 600;
-    margin-top: 3%;
-
+  width: 80%;
+  margin: auto;
+  font-weight: 800;
+  margin-top: 3%;
+  text-align: center;
+  display: grid;
+  row-gap: 20px;
+  justify-items: center;
+  color: var(--main-fontColor);
     h4, h3 {
     font-weight: 700;
     }
 
 }
+
+.about__title {
+  font-weight: 700;
+  color: var(--main-fontColor);
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-color: var(--second-fontColor);
+  line-height: 30pt;
+  width: min-content;
+}
+
 .item {
     text-align: center;
     font-weight: 600;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    row-gap: 10px;
     align-items: center;
+    justify-items: center;
+    grid-template-rows: 1fr min-content;
+    color: var(--main-fontColor);
+    font-weight: 700;
+    border: 2px solid #36577e;
+    padding: 20px;
+    font-size: 1.1rem;
+    min-width: 210px;
+
     .title {
-        font-weight: 700;
+        font-weight: 800;
         font-size: 1.4rem;
+        color: var(--main-fontColor);
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        width: 120px;
+        border-bottom-color: var(--main-fontColor);
+        line-height: 30pt;
     }
     img {
-        width: 120px;
+        width: 150px;
         margin-bottom: 10px;
     }
+}
+
+
+.separator3 {
+  width: 100%;
+  background-color: #ffffff;
+  height: 25px;
+  position: relative;
+}
+
+.image-separator2 {
+  background-color: #36577E;
+  max-width: 450px;
+  min-width: 100px;
+  width: 80%;
+  height: 20px;
+  transform: skew(40deg);
+  position: absolute;
+  margin-left: 30px;
+  top: -20px;
+  right: 30px;
 }

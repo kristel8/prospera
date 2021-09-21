@@ -1,0 +1,145 @@
+<section class="buscador">
+  <div class="buscador__panel">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#home"
+          type="button"
+          role="tab"
+          aria-controls="comprar"
+          aria-selected="true"
+        >
+          Proyectos
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#profile"
+          type="button"
+          role="tab"
+          aria-controls="profile"
+          aria-selected="false"
+        >
+          Proyectos
+        </button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="home"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+      >
+        <div class="buscador__filtros">
+          <label class="labelsection"> Ubicación </label>
+
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Buscar por deparamento o distrito"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            />
+          </div>
+
+          <label class="labelsection"> Tipo Inmueble </label>
+
+          <div class="input-group">
+            <select
+              class="form-select form-select-lg mb-3 tamanoselect"
+              aria-label=".form-select-lg example"
+            >
+              <option selected>Apartamento</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <label class="labelsection"> Dormitorios </label>
+          <div class="selectores">
+            <select
+              class="form-select form-select-lg mb-3 tamanoselect"
+              aria-label=".form-select-lg example"
+            >
+              <option selected>Sin minimo</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+
+            <select
+              class="form-select form-select-lg mb-3 tamanoselect"
+              aria-label=".form-select-lg example"
+            >
+              <option selected>Sin Maximo</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <label class="labelsection">Precio</label>
+
+          <input
+            type="range"
+            class="form-range"
+            min="0"
+            max="5"
+            id="customRange2"
+          />
+
+          <div class="detalleprecio">
+            <div class="detalleprecio__monto">
+              <div class="monto__cabecera">
+                <label class="labelcabecera">Precio Minimo</label>
+                <label class="labelmonto">S/. 2000</label>
+              </div>
+            </div>
+
+            <label class="separador">─</label>
+
+            <div class="detalleprecio__monto">
+              <div class="monto__cabecera">
+                <label class="labelcabecera">Precio Maximo</label>
+                <label class="labelmonto">S/. 2000</label>
+              </div>
+            </div>
+          </div>
+
+          <label class="labelsection"> Estado del Proyecto </label>
+
+          <select
+            class="form-select form-select-lg mb-3 tamanoselectestado"
+            aria-label=".form-select-lg example"
+          >
+            <option selected>SeleccionarEstado</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+          <button class="guardar">Guardar Busqueda</button>
+        </div>
+      </div>
+
+      <div
+        class="tab-pane fade buscador__filtros"
+        id="profile"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+      >
+        2...
+      </div>
+    </div>
+  </div>
+</section>

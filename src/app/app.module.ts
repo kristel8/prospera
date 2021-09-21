@@ -6,6 +6,7 @@ import { ViewRoutingModule } from './views/view-routing.module';
 import { ViewModule } from './views/view.module';
 import { AppRoutingModule } from './app-routing.module';
 import { ComponentModule } from './components/component.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ComponentModule } from './components/component.module';
     ViewRoutingModule,
     AppRoutingModule,
     ViewModule,
+    RouterModule,
     ComponentModule
   ],
   providers: [],

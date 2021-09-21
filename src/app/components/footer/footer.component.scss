@@ -1,8 +1,7 @@
 .footer {
-  background-color: black;
+  background-color: #4ca188;
   bottom: 0;
-  position: relative;
-  margin-top: 10em;
+  width: 100%;
 
   .container-footer {
     display: grid;
@@ -10,12 +9,17 @@
     margin: auto;
     justify-content: center;
     column-gap: 40px;
-    grid-template-columns: repeat(4, min-content);
+    grid-template-columns: repeat(5, min-content);
     padding: 4%;
 
-    @media (max-width: 900px) {
+
+    @media (max-width: 1200px) {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .item-img img {
+      width: 15em;
     }
     .item {
       color: white;
@@ -45,8 +49,8 @@
   }
 
   .main-footer {
-    background-color: black;
-    color: #62a9f6;
+    background-color: #4ca188;
+    color: white;
     text-align: center;
     font-weight: 500;
   }
