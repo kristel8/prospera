@@ -13,6 +13,8 @@ import { SimulationComponent } from './simulation/simulation.component';
 import { AboutComponent } from './about/about.component';
 import { SearchingComponent } from './searching/searching.component';
 import { RouterModule } from '@angular/router';
+import { DescriptionComponent } from './description/description.component';
+import { InvestpropertiesComponent } from './investproperties/investproperties.component';
 
 
 @NgModule({
@@ -23,13 +25,16 @@ import { RouterModule } from '@angular/router';
     QuestionsComponent,
     SimulationComponent,
     AboutComponent,
-    SearchingComponent
+    SearchingComponent,
+    DescriptionComponent,
+    InvestpropertiesComponent
+
   ],
   imports: [
     CommonModule,
     ViewRoutingModule,
-    RouterModule,
-    ComponentModule
+    ComponentModule,
+    RouterModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

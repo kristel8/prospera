@@ -1,0 +1,37 @@
+.container-message, .container-about {
+   display: flex;
+   row-gap: 1em;
+   flex-direction: column;
+    width: 80%;
+    margin: auto;
+    font-weight: 600;
+    margin-top: 3%;
+
+    h4, h3 {
+    font-weight: 700;
+    }
+
+}
+
+.options{
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 80%;
+margin: auto;
+margin-top: 7em;
+justify-content: space-around;
+row-gap: 1.5em;
+
+&__card{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 14em;
+    row-gap: 1.5em;
+
+}
+
+}
