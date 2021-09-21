@@ -1,403 +1,231 @@
-<!-- <section class="buscador">
-  <div class="container-searching">
-    <div class="container-buscador">
-      <div class="item-buscador">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="proyectos-tab" data-bs-toggle="tab" data-bs-target="#proyectos"
-              type="button" role="tab" aria-controls="proyectos" aria-selected="true">
-              Comprar
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="comprar-tab" data-bs-toggle="tab" data-bs-target="#comprar" type="button"
-              role="tab" aria-controls="comprar" aria-selected="false">
-              Proyectos
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="proyectos" role="tabpanel" aria-labelledby="proyectos-tab">
-            <span>Ubicación</span>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-              aria-describedby="addon-wrapping" />
-
-            <span>Tipo de inmueble</span>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <span>Dormitorios</span>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <span>Precio</span>
-            <label for="customRange2" class="form-label">Example range</label>
-            <input type="range" class="form-range" min="0" max="5" id="customRange2" />
-
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-              aria-describedby="addon-wrapping" />
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-              aria-describedby="addon-wrapping" />
-            <span>Estado del proyecto</span>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <input class="btn btn-primary w-100" type="button" value="Input" />
-          </div>
-          <div class="tab-pane fade" id="comprar" role="tabpanel" aria-labelledby="comprar-tab">
-            ..ssssss.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-carousel">
-      <div class="row">
-        <div class="item-carousel col-6">
-          <div class="tag">
-            <span>En construcción</span>
-          </div>
-          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets/img/image2.png" class="d-block" alt="..." />
-              </div>
-              <div class="carousel-item">
-                <img src="assets/img/image2.png" class="d-block" alt="..." />
-              </div>
-              <div class="carousel-item">
-                <img src="assets/img/image2.png" class="d-block" alt="..." />
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-        <div class="container-description col-6">
-          <p>3 dormitorios, 192 m2</p>
-          <p>Residencial Las Retamas</p>
-          <button class="btn btn-prospera1"></button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
-
-
 <section class="buscador">
-
-
   <!--Buscador Panel-->
-  
-  
-  <div class="buscador__panel">
+  <app-searcher class="container-buscador"></app-searcher>
+  <!--FIN Buscador Panel-->
 
-
-
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-
-        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
-          role="tab" aria-controls="comprar" aria-selected="true">
-          Proyectos
+  <div class="resultadobusqueda">
+    <div class="botonesBuscador">
+      <div class="dropdown">
+        <button
+          class="btn btn-prospera5 dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Relevantes
         </button>
-      </li>
-      <li class="nav-item" role="presentation">
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
 
+      <button
+        type="button"
+        class="btn btn-prospera5 botonBuscador"
+        data-toggle="modal"
+        data-target="#openDialogSearcher"
+      >
+        Buscar
+      </button>
+    </div>
 
-        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-          role="tab" aria-controls="profile" aria-selected="false">
-          Proyectos
-        </button>
-      </li>
-
-    </ul>
-
-
-
-
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
-        <div class="buscador__filtros">
-          <label class="labelsection"> Ubicacion </label>
-
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
-              aria-describedby="basic-addon2" />
-
-          </div>
-
-          <label class="labelsection"> Tipo Inmueble </label>
-
-          <div class="input-group ">
-            <select class="form-select form-select-lg mb-3 tamanoselect" aria-label=".form-select-lg example">
-              <option selected>Apartamento</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-
-          </div>
-
-          <label class="labelsection"> Dormitorios </label>
-          <div class="selectores">
-            <select class="form-select form-select-lg mb-3 tamanoselect" aria-label=".form-select-lg example">
-              <option selected>Sin minimo</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-
-            <select class="form-select form-select-lg mb-3 tamanoselect" aria-label=".form-select-lg example">
-              <option selected>Sin Maximo</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-
-          <label class="labelsection">Precio</label>
-
-          <input type="range" class="form-range" min="0" max="5" id="customRange2" />
-
-          <div class="detalleprecio">
-
-            <div class="detalleprecio__monto">
-              <div class="monto__cabecera">
-                <label class="labelcabecera">Precio Minimo</label>
-                <label class="labelmonto">S/. 2000</label>
-              </div>
-
+    <div class="descripcionBuesquedaResultadoGrupo">
+      <div class="descripcionbusqueda">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+        <div class="tag">En construcción</div>
+          <div class="carousel-inner tamanoimagen">
+            <div class="carousel-item active tamanoimagen">
+              <img
+                src="assets/img/image1.png"
+                class="d-block w-100 tamanoimagen"
+                alt="..."
+              />
             </div>
-
-            <label class="separador">─</label>
-
-
-            <div class="detalleprecio__monto">
-              <div class="monto__cabecera">
-                <label class="labelcabecera">Precio Maximo</label>
-                <label class="labelmonto">S/. 2000</label>
-              </div>
-
+            <div class="carousel-item tamanoimagen">
+              <img
+                src="assets/img/image1.png"
+                class="d-block w-100 tamanoimagen"
+                alt="..."
+              />
             </div>
-
+            <div class="carousel-item tamanoimagen">
+              <img
+                src="assets/img/image1.png"
+                class="d-block w-100 tamanoimagen"
+                alt="..."
+              />
+            </div>
           </div>
-
-
-          <label class="labelsection"> Estado del Proyecto </label>
-
-          <select class="form-select form-select-lg mb-3 tamanoselectestado" aria-label=".form-select-lg example">
-            <option selected>SeleccionarEstado</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-
-
-          <button class="guardar">Guardar Busqueda</button>
-
-
-
-
-
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
+        <div class="especificaciones">
+          <div class="especificaciones__cabecera">
+            <div class="dispersion">
+              <span class="etiquetaMonto">Desde</span>
+              <span class="monto">S/.2,486</span>
+            </div>
 
+            <div class="verticalLine"></div>
 
-      </div>
-
-      <div class="tab-pane fade buscador__filtros" id="profile" role="tabpanel" aria-labelledby="profile-tab">2...</div>
-    </div>
-
-
-
-  </div>
-
-
-   <!--FIN Buscador Panel-->
-
-<div class="resultadobusqueda">
-
-  <div class="opcionBusqueda">
-
-
-<select name="select" class="disenoSelect">
-  <option value="value1" class="disenoSelect">Relevantes</option>
-  <option value="value1">Relevantes</option>
-  <option value="value1">Relevantes</option>
-
-</select>
-  </div>
-
-  <div class="descripcionBuesquedaResultadoGrupo">
-
-<div class="descripcionbusqueda">
-
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner tamanoimagen">
-      <div class="carousel-item active tamanoimagen">
-        <img src="assets/img/image1.png" class="d-block w-100 tamanoimagen" alt="...">
-      </div>
-      <div class="carousel-item tamanoimagen">
-        <img src="assets/img/image1.png" class="d-block w-100 tamanoimagen" alt="...">
-      </div>
-      <div class="carousel-item tamanoimagen">
-        <img src="assets/img/image1.png" class="d-block w-100 tamanoimagen" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-<div class="especificaciones">
-
-  <div class="especificaciones__cabecera">
-<div class="dispersion">
-  <span class="etiquetaMonto">Desde</span>
-  <span class="monto">S/.2,486</span>
-</div>
-
-<div class="verticalLine">  </div>
-
-
-
-<div class="dispersion2">
-  <span class="direccion">Las Retamas N°49</span>
-  <span class="direccionespeci">Salamanca de monterrico, Ate - Vitarte</span>
-</div>
-
-  </div>
-
-  <div class="especificaciones__cuerpo">
-    <div>
-      <span class="descripcion">3 dormitorios, 192 m2</span>
-     
-    </div>
-    
-    <div class="dispersion">
-      <span class="ubiDescrip">Residencial Las Retamas</span>
-      <span class="ubiDescripEspe">5 ultimos departamentos a punto de estrenarse, entrega marzo 2021</span>
-    </div>
-    
-      </div>
-
-
-      <div class="especificaciones__pie">
-     <button class="botonContactar">Contactar</button>
-        
+            <div class="dispersion2">
+              <span class="direccion">Las Retamas N°49</span>
+              <span class="direccionespeci"
+                >Salamanca de monterrico, Ate - Vitarte</span
+              >
+            </div>
           </div>
 
+          <div class="especificaciones__cuerpo">
+            <div>
+              <span class="descripcion">3 dormitorios, 192 m2</span>
+            </div>
 
-</div>
-
-</div>
-
-
-
-<div class="descripcionbusqueda">
-
-  <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner tamanoimagen">
-      <div class="carousel-item active tamanoimagen">
-        <img src="assets/img/image1.png" class="d-block w-100 tamanoimagen" alt="...">
-      </div>
-      <div class="carousel-item tamanoimagen">
-        <img src="assets/img/image1.png" class="d-block w-100 tamanoimagen" alt="...">
-      </div>
-      <div class="carousel-item tamanoimagen">
-        <img src="assets/img/image1.png" class="d-block w-100 tamanoimagen" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-<div class="especificaciones">
-
-  <div class="especificaciones__cabecera">
-<div class="dispersion">
-  <span class="etiquetaMonto">Desde</span>
-  <span class="monto">S/.2,486</span>
-</div>
-
-<div class="verticalLine">  </div>
-
-
-
-<div class="dispersion2">
-  <span class="direccion">Las Retamas N°49</span>
-  <span class="direccionespeci">Salamanca de monterrico, Ate - Vitarte</span>
-</div>
-
-  </div>
-
-  <div class="especificaciones__cuerpo">
-    <div>
-      <span class="descripcion">3 dormitorios, 192 m2</span>
-     
-    </div>
-    
-    <div class="dispersion">
-      <span class="ubiDescrip">Residencial Las Retamas</span>
-      <span class="ubiDescripEspe">5 ultimos departamentos a punto de estrenarse, entrega marzo 2021</span>
-    </div>
-    
-      </div>
-
-
-      <div class="especificaciones__pie">
-     <button class="botonContactar">Contactar</button>
-        
+            <div class="dispersion">
+              <span class="ubiDescrip">Residencial Las Retamas</span>
+              <span class="ubiDescripEspe"
+                >5 ultimos departamentos a punto de estrenarse, entrega marzo
+                2021</span
+              >
+            </div>
           </div>
 
+          <div class="especificaciones__pie">
+            <button class="botonContactar">Contactar</button>
+          </div>
+        </div>
+      </div>
 
-</div>
+      <div class="descripcionbusqueda">
+        <div
+          id="carouselExampleControls2"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+        <div class="tag">En construcción</div>
+          <div class="carousel-inner tamanoimagen">
+            <div class="carousel-item active tamanoimagen">
+              <img
+                src="assets/img/image1.png"
+                class="d-block w-100 tamanoimagen"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item tamanoimagen">
+              <img
+                src="assets/img/image1.png"
+                class="d-block w-100 tamanoimagen"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item tamanoimagen">
+              <img
+                src="assets/img/image1.png"
+                class="d-block w-100 tamanoimagen"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls2"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls2"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
-</div>
+        <div class="especificaciones">
+          <div class="especificaciones__cabecera">
+            <div class="dispersion">
+              <span class="etiquetaMonto">Desde</span>
+              <span class="monto">S/.2,486</span>
+            </div>
 
+            <div class="verticalLine"></div>
 
+            <div class="dispersion2">
+              <span class="direccion">Las Retamas N°49</span>
+              <span class="direccionespeci"
+                >Salamanca de monterrico, Ate - Vitarte</span
+              >
+            </div>
+          </div>
 
+          <div class="especificaciones__cuerpo">
+            <div>
+              <span class="descripcion">3 dormitorios, 192 m2</span>
+            </div>
 
+            <div class="dispersion">
+              <span class="ubiDescrip">Residencial Las Retamas</span>
+              <span class="ubiDescripEspe"
+                >5 ultimos departamentos a punto de estrenarse, entrega marzo
+                2021</span
+              >
+            </div>
+          </div>
 
+          <div class="especificaciones__pie">
+            <button class="botonContactar">Contactar</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-
-
 </section>
+
+<div class="section-dialog2">
+  <div class="modal fade" id="openDialogSearcher" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <label for=""></label>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <app-searcher></app-searcher>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -28,12 +28,14 @@ body {
 }
 
 .btn-prospera4 {
-  background-color: #36577E;
+  background-color: #2a4668;
   color: white;
-  border-radius: 15px;
+  border-radius: 10px;
   font-weight: 600;
-  padding: 10px 20%;
+  padding: 15px;
   box-shadow: 0px 4px 4px 0px #00000040;
+  max-width: 200px;
+  margin-left: 5px;
 }
 
 
@@ -48,16 +50,26 @@ body {
   margin-top: 20px;
 }
 
-.btn-prospera4:hover, .btn-prospera3:hover {
+.btn-prospera5 {
+  background-color: var(--main-fontColor);
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  width: fit-content;
+  padding: 10px 4%;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  padding: 10px;
+}
+
+.btn-prospera4:hover, .btn-prospera5:hover, .btn-prospera3:hover {
   background-color: #2968b5;
   color: white;
 }
 
 
-@media (min-width: 576px) {
-
-  .modal-dialog {
-    max-width: 1500px !important;
-    margin: 1.75rem auto;
+/* @media (min-width: 1600px) {
+  .modal-backdrop {
+    display: none !important;
+    }
 }
-}
+ */

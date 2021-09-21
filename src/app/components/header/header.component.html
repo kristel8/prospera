@@ -30,18 +30,18 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Categorias
+              Categorías
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="#">Action</a></li>
             </ul>
           </li>
         </ul>
-        <form class="d-flex">
+        <form class="d-flex" style="width: 100%;">
           <input
             class="form-control search"
             type="search"
-            placeholder="¿Que estás buscando?"
+            placeholder="¿Qué estás buscando?"
             aria-label="Buscar"
           />
           <button [routerLink]="['buscar']" class="btn btn-prospera1" >Buscar</button>
@@ -54,15 +54,9 @@
         </button>
       </div>
       <ul class="navbar-nav mb-2 mb-lg-0">
-<<<<<<< HEAD
         <!-- <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/inicio">Inicio</a>
         </li> -->
-=======
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" [routerLink]="'inicio'">Inicio</a>
-        </li>
->>>>>>> origin/Ventana2
 
         <li class="nav-item dropdown">
           <a
@@ -75,7 +69,7 @@
           >
             Quienes somos
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <ul class="dropdown-menu" style="right: 0; left: auto; " aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="/nosotros">NOSOTROS</a></li>
             <li><a class="dropdown-item" href="/preguntas-frecuentes">¿PORQUÉ INVERTIR EN PROPIEDADES?</a></li>
             <li><a class="dropdown-item" href="/porque-invertir">¿PORQUE INVERTIR CON PROSPERA.COM?</a></li>
@@ -92,17 +86,21 @@
 </nav>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <app-login></app-login>
+<div class="section-dialog1">
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <label for=""></label>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <app-login></app-login>
+        </div>
       </div>
     </div>
   </div>
+
 </div>

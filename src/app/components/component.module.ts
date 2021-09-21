@@ -6,6 +6,7 @@ import { LoadingComponent } from './loading/loading.component';
 import { RouterModule } from '@angular/router';
 import { ViewModule } from '../views/view.module';
 import { LoginComponent } from './login/login.component';
+import { SearcherComponent } from './searcher/searcher.component';
 
 
 
@@ -14,7 +15,8 @@ import { LoginComponent } from './login/login.component';
     FooterComponent,
     HeaderComponent,
     LoadingComponent,
-    LoginComponent
+    LoginComponent,
+    SearcherComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { LoginComponent } from './login/login.component';
   exports: [
     FooterComponent,
     HeaderComponent,
-    LoadingComponent
+    LoadingComponent,
+    SearcherComponent
   ]
 })
 export class ComponentModule { }
