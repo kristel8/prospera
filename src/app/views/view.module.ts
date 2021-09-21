@@ -2,7 +2,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ViewRoutingModule } from './view-routing.module';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from '../components/login/login.component';
 import { MainComponent } from './main/main.component';
 import { AppModule } from '../app.module';
 import { ComponentModule } from '../components/component.module';
@@ -17,7 +17,6 @@ import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
-    LoginComponent,
     MainComponent,
     TeamComponent,
     InvestComponent,

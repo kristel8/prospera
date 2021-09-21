@@ -10,6 +10,7 @@
     justify-content: space-around;
     .group {
         display: flex;
+        width: 100%;
         @media (max-width: 800px) {
             flex-wrap: wrap;
             width: 100%;
@@ -33,7 +34,6 @@
     color: #454444;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: 'Montserrat';
 }
 
 .search {
@@ -43,18 +43,11 @@
 
 
 .navbar-customize {
-    background-color: #f7f7f7; 
-    border-bottom: 1px solid #917a7a; 
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #917a7a;
     padding: 15px 0 15px;
 }
-.btn-prospera1 {
-    background-color: #5F7F9F;
-    color: white;
-    border-radius: 0px 20px 20px 0px;
-    width: 150px;
-    font-weight: 600;
-    box-shadow: 0px 4px 4px 0px #00000040;
-}
+
 
 .btn-prospera1:hover {
     background-color: #7ca7d1;

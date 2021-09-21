@@ -48,11 +48,15 @@
         </form>
       </div>
 
-
+      <div class="group">
+        <button type="button" class="btn btn-prospera4" data-toggle="modal" data-target="#exampleModalCenter">
+          COMIENZA AHORA
+        </button>
+      </div>
       <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/inicio">Inicio</a>
-        </li>
+        </li> -->
 
         <li class="nav-item dropdown">
           <a
@@ -80,3 +84,19 @@
     </div>
   </div>
 </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <app-login></app-login>
+      </div>
+    </div>
+  </div>
+</div>

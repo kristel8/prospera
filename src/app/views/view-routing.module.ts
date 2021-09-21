@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from '../components/header/header.component';
 import { AboutComponent } from './about/about.component';
 import { InvestComponent } from './invest/invest.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from '../components/login/login.component';
 import { MainComponent } from './main/main.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { SearchingComponent } from './searching/searching.component';

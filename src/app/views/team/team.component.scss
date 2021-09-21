@@ -7,21 +7,37 @@
     margin-top: 5%;
     row-gap: 20px;
     @media screen {
-        
+
     }
+}
+
+.container-team {
+  background-color: white;
+  padding: 100px 0;
 }
 
 .container-message {
     width: 80%;
     margin: auto;
     font-weight: 600;
-    margin-top: 3%;
 
-    h4, h3 {
-    font-weight: 700;
+
+    h4 {
+      font-weight: 700;
+    }
+    h3 {
+      font-weight: 700;
+      border-bottom-style: solid;
+      border-bottom-width: 4px;
+      border-bottom-color: var(--second-fontColor);
+      line-height: 30pt;
+      width: fit-content;
+      display: block;
+      justify-self: left;
     }
 
 }
+
 .team {
     text-align: center;
     font-weight: 600;

@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { LoadingComponent } from './loading/loading.component';
-import { SimulationComponent } from '../views/simulation/simulation.component';
 import { RouterModule } from '@angular/router';
+import { ViewModule } from '../views/view.module';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -12,12 +13,12 @@ import { RouterModule } from '@angular/router';
   declarations: [
     FooterComponent,
     HeaderComponent,
-    LoadingComponent
-
+    LoadingComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
   ],
   exports: [
     FooterComponent,
